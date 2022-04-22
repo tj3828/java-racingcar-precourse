@@ -4,25 +4,23 @@
 
 ## 객체
 
-1. 자동차의 행동상태
-2. 자동차의 완주상태
-3. 자동차의 주행거리
-4. 자동차의 이름 입력값 (UserInputCarNames)
+1. 자동차의 이름 입력값 (UserInputCarNames)
    1. 필드
       1. 문자열 배열
    2. 함수
       1. 쉼표기준으로 배열로 generate
-5. 시도할 횟수 (RacingRepeatCount)
+      2. 유효성 검사 - 중복 이름이 없는지
+2. 시도할 횟수 (RacingRepeatCount)
    1. 필드
       1. 횟수
    2. 함수
-      1. 숫자인지 유효성 검사
-6. 자동차의 이름 (CarName)
+      1. 음수여부 체크
+3. 자동차의 이름 (CarName)
    1. 필드
       1. 이름
    2. 함수
       1. 5자 이하 유효성 검사
-7. 자동차 (Car)
+4. 자동차 (Car)
    1. 필드
       1. 자동차의 이름
       2. 자동차의 완주상태
@@ -30,24 +28,33 @@
    2. 함수
       1. 현재 자동차의 위치 출력
       2. 자동차가 이동할 숫자 추출
-8. 자동차가 이동할 조건의 숫자 (CarBehavior)
+5. 자동차가 이동할 조건의 숫자 (CarBehavior)
    1. 필드
       1. 숫자
    2. 함수
       1. 0~9 유효성검사
       2. 차가 움직일 상태인지 리턴
-9. 게임머신 (GameMachine)
+6. 게임머신 (GameMachine)
    1. 필드
       1. 자동차들을 가진 리스트
    2. 함수
       1. 게임시작
-10. 자동차들을 가진 리스트 (CarList)
-    1. 필드
-       1. 자동차 리스트
-    2. 함수
-       1. 우승 자동차 출력
-11. 시스템 출력 view (SystemOutputView)
-12. 유저 입력값 controller (UserInputController)
+7. 자동차들을 가진 리스트 (CarList)
+   1. 필드
+      1. 자동차 리스트
+   2. 함수
+      1. 우승 자동차 출력
+8. 시스템 출력 view (SystemOutputView)
+9. 유저 입력값 controller (UserInputController)
+
+
+## 설정값 (CarMovingConfig)
+1. 자동차를 움직이기 위한 조건으로 생성하는 랜덤 값의 범위
+2. 자동차를 움직일지 결정하는 경계값
+
+## 상태값
+1. 자동차가 움직이냐 마냐의 상태 (CarMovingStatusType)
+
 
 
 ---
