@@ -31,4 +31,8 @@ public class UserInputCarNames {
         }
     }
 
+    public List<CarName> getCarNameList() {
+        return carNameList;
+    }
+
 }

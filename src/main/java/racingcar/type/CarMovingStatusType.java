@@ -2,13 +2,11 @@ package racingcar.type;
 
 public enum CarMovingStatusType {
 
-    NONE(0),
-    MOVING(1);
+    NONE,
+    MOVING;
 
-    private final int code;
-
-    CarMovingStatusType(int code) {
-        this.code = code;
+    public static boolean isMovingType(CarMovingStatusType carMovingStatusType) {
+        return CarMovingStatusType.MOVING.equals(carMovingStatusType);
     }
 
 }
