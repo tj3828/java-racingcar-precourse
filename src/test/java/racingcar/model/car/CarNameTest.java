@@ -12,7 +12,7 @@ public class CarNameTest {
 
     @ParameterizedTest
     @DisplayName("자동차의 이름은 1~5자 여야한다.")
-    @ValueSource(strings = {"","abcdef"})
+    @ValueSource(strings = {"", "abcdef"})
     public void 자동차_이름_유효성검사(String input) {
         assertThatIllegalArgumentException().isThrownBy(() -> new CarName(input));
     }

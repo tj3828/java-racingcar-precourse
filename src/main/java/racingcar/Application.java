@@ -4,6 +4,7 @@ import racingcar.model.game.GameMachine;
 import racingcar.view.SystemOutputErrorView;
 
 public class Application {
+
     public static void main(String[] args) {
         try {
             new GameMachine().start();
@@ -11,4 +12,5 @@ public class Application {
             SystemOutputErrorView.printError(e.getMessage());
         }
     }
+
 }

@@ -13,7 +13,7 @@ public class Car {
     }
 
     public void changeDistance(CarBehavior carBehavior) {
-        if(CarMovingStatusType.isMovingType(carBehavior.getMovingStatusType())) {
+        if (CarMovingStatusType.isMovingType(carBehavior.getMovingStatusType())) {
             distance++;
         }
     }
@@ -28,7 +28,7 @@ public class Car {
     }
 
     private void validateIfNull(CarName carName) {
-        if(carName == null) {
+        if (carName == null) {
             throw new IllegalArgumentException("자동차의 이름은 필수값입니다.");
         }
     }

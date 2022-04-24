@@ -29,7 +29,7 @@ public class SystemOutputView {
 
     public static void finishRacing(List<Car> headCarList) {
         List<String> carNameList = new ArrayList<>();
-        for(Car car : headCarList) {
+        for (Car car : headCarList) {
             carNameList.add(car.getCarName());
         }
 

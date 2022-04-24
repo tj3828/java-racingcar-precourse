@@ -28,7 +28,7 @@ public class CarList {
         int maxDistanceOfCarList = getMaxDistanceOfCarList();
         List<Car> headCarList = new ArrayList<>();
 
-        for(Car car : carList) {
+        for (Car car : carList) {
             addHeadCarList(maxDistanceOfCarList, headCarList, car);
         }
 
@@ -36,14 +36,14 @@ public class CarList {
     }
 
     private void addHeadCarList(int maxDistanceOfCarList, List<Car> headCarList, Car car) {
-        if(car.getDistanceCount() == maxDistanceOfCarList) {
+        if (car.getDistanceCount() == maxDistanceOfCarList) {
             headCarList.add(car);
         }
     }
 
     private int getMaxDistanceOfCarList() {
         int maxDistance = Integer.MIN_VALUE;
-        for (Car car: carList) {
+        for (Car car : carList) {
             maxDistance = Math.max(maxDistance, car.getDistanceCount());
         }
 
